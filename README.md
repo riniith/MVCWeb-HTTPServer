@@ -12,6 +12,16 @@ HTTPサーバー
 基盤となるSocketを直接利用してTCP/IP通信を実現すると同時に、HTTPプロトコルの解析、HTTPリクエストの受信、レスポンスの生成と返信を実現し、マルチスレッドによる同時アクセスを実現します。
 
 
+MVC web framework and HTTP server
+
+Web framework adopts MVC architecture for code separation
+
+The Model model layer uses a self-made MyBatis-based data persistence layer based on MySQL to provide type mapping and binding between POJ0 and SQL. The Controller layer uses HashMap and Method Reference to implement routing distribution, custom requests and custom response encapsulation. ; The View layer uses FreeMarker to encapsulate singleton rendering template generation.
+
+HTTP server
+
+It directly uses the underlying Socket to realize TCP/IP communication, and at the same time realizes the analysis of the HTTP protocol, realizes the reception of HTTP requests, generates responses and returns them; and realizes concurrent access through multi-threading.
+
 MVC Web框架和HTTP服务器
 
 Web框架采用MVC架构进行代码分离
